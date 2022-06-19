@@ -1,0 +1,48 @@
+.Meta {
+  position: relative;
+  height: 100%;
+  ul {
+    position: relative;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 18px;
+    transform: translateY(-10%);
+    list-style-type: none;
+    width: 75%;
+    margin: 0;
+    padding: 0;
+
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 133.84%;
+
+    letter-spacing: 0.055em;
+
+    color: #000000;
+
+    li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &:before {
+    content:'';
+    background: #E4D8B9;
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    left: -30px;
+    position: absolute;
+    z-index: 0;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translateX(-50%);
+    max-width: 80px;
+  }
+}

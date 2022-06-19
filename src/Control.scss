@@ -1,0 +1,58 @@
+.Control {
+  border-radius: 7px 0 0 7px;
+  background: #BDDDDE;
+  box-shadow: inset -1px 0px 5px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 8px;
+    margin-left: auto;
+
+    li {
+      border-radius: 7px;
+      height: 65px;
+      width: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      img {
+        height: 50%;
+      }
+
+      &:hover {
+        background-color: #DEEDEE;
+
+      }
+    }
+  }
+  .day-night {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      img {
+        width: 50%;
+        height: 38px;
+      }
+    }
+
+    span:first-child {
+      flex: 1;
+      background: #FFF3DA;
+    }
+    span:last-child {
+      flex: 1;
+      background: #94A6A6;
+    }
+  }
+
+}
